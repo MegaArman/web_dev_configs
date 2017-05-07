@@ -42,3 +42,5 @@ colorscheme koehler
 set tabstop=2
 set autoindent
 set number
+set pastetoggle=<F2>
+
