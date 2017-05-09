@@ -40,6 +40,7 @@ let g:syntastic_check_on_wq = 0
 syntax on
 colorscheme koehler
 set tabstop=2
+set shiftwidth=2
 set autoindent
 set number
 set pastetoggle=<F2>
