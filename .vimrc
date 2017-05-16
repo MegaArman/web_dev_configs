@@ -40,6 +40,8 @@ let g:syntastic_check_on_wq = 0
 syntax on
 colorscheme koehler
 set shiftwidth=2
+set softtabstop=2
+set expandtab
 set autoindent
 set number
 set pastetoggle=<F2>
