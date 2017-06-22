@@ -38,7 +38,7 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 syntax on
-colorscheme koehler
+colorscheme default
 set shiftwidth=2
 set softtabstop=2
 set expandtab
@@ -50,3 +50,6 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g'\"" | endif
 endif
+
+" Shortcuts
+:nmap p :pu<CR>
