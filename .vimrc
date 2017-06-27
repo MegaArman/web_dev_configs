@@ -12,6 +12,8 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'Raimondi/delimitMate'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'ervandew/supertab'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent off    " required
@@ -46,10 +48,12 @@ set autoindent
 set number
 set pastetoggle=<F2>
 
+" Resume from previous line 
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g'\"" | endif
 endif
 
 " Shortcuts
+" Press esc to paste properly in insert mode (cntrl shift v)
 :nmap p :pu<CR>
