@@ -8,11 +8,22 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
+
+" HTML snippets
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'Raimondi/delimitMate'
+
+"linter
 Plugin 'vim-syntastic/syntastic'
+
+" Tab to autocomplete
 Plugin 'ervandew/supertab'
+
+" Search and replace:
+" :Far foo bar **/*.py
+" :Fardo
+Plugin 'brooth/far.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
