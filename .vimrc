@@ -51,7 +51,7 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 syntax on
-colorscheme koehler
+colorscheme delek
 set shiftwidth=2
 set softtabstop=2
 set expandtab
@@ -66,5 +66,6 @@ if has("autocmd")
 endif
 
 " Shortcuts
-" Press esc to paste properly in insert mode (cntrl shift v)
-:nmap p :pu<CR>
+" Paste on new line with o
+:nmap o :pu<CR>
+
