@@ -69,7 +69,10 @@ endif
 " Paste on new line with o
 :nmap o :pu<CR>
 
-" y (yank) copies to clipboard, p to paste between vim windows (ex: tmux)
-" MUST HAVE x11 support in vim- so for fedora dnf install vim-X11
-:set clipboard=unnamedplus
-
+" :vs newfile.js to open a newfile in new pane (lets you yank & paste between them)
+" :e to edit a new file in the current pane
+" alt arrow to change panes
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
