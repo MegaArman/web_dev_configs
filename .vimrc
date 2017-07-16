@@ -71,8 +71,7 @@ endif
 
 " :vs newfile.js to open a newfile in new pane (lets you yank & paste between them)
 " :e to edit a new file in the current pane
-" Ctrl arrow to change panes
-nmap <silent> <C-Up> :wincmd k<CR>
-nmap <silent> <C-Down> :wincmd j<CR>
-nmap <silent> <C-Left> :wincmd h<CR>
-nmap <silent> <C-Right> :wincmd l<CR>
+
+" If on Linux you can Cntrl-Shift-C to copy from one buffer:
+set clipboard=unnamed
+vnoremap <C-Shift-C> :w !xclip -i -sel c<CR><CR>
