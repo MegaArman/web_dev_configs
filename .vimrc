@@ -51,7 +51,7 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 syntax on
-colorscheme delek
+colorscheme koehler
 set shiftwidth=2
 set softtabstop=2
 set expandtab
@@ -68,4 +68,8 @@ endif
 " Shortcuts
 " Paste on new line with o
 :nmap o :pu<CR>
+
+" y (yank) copies to clipboard, p to paste between vim windows (ex: tmux)
+" MUST HAVE x11 support in vim- so for fedora dnf install vim-X11
+:set clipboard=unnamedplus
 
