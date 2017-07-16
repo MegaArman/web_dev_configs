@@ -71,8 +71,8 @@ endif
 
 " :vs newfile.js to open a newfile in new pane (lets you yank & paste between them)
 " :e to edit a new file in the current pane
-" alt arrow to change panes
-nmap <silent> <A-Up> :wincmd k<CR>
-nmap <silent> <A-Down> :wincmd j<CR>
-nmap <silent> <A-Left> :wincmd h<CR>
-nmap <silent> <A-Right> :wincmd l<CR>
+" Ctrl arrow to change panes
+nmap <silent> <C-Up> :wincmd k<CR>
+nmap <silent> <C-Down> :wincmd j<CR>
+nmap <silent> <C-Left> :wincmd h<CR>
+nmap <silent> <C-Right> :wincmd l<CR>
