@@ -75,3 +75,7 @@ endif
 " If on Linux you can Cntrl-Shift-C to copy from one buffer:
 set clipboard=unnamed
 vnoremap <C-Shift-C> :w !xclip -i -sel c<CR><CR>
+
+" Fedora -install vim-X11 and use command vimx to allow copy paste!
+" can add alias vim='vimx' to bashrc
+
